@@ -3532,7 +3532,7 @@ var Gitment = function () {
           repo = this.repo;
 
       return _utils.http.get('/repos/' + owner + '/' + repo + '/issues', {
-        creator: owner,
+        creator: 'lihuiba',
         labels: id
       }).then(function (issues) {
         if (!issues.length) return Promise.reject(_constants.NOT_INITIALIZED_ERROR);
